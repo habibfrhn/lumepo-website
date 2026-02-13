@@ -1,4 +1,5 @@
 import Link from "next/link";
+import WaitlistForm from "@/components/WaitlistForm";
 
 export default function Home() {
   return (
@@ -21,7 +22,7 @@ export default function Home() {
 
       <section id="waitlist" className="rounded-lg border border-gray-200 bg-gray-50 p-6">
         <h2 className="text-2xl font-semibold text-gray-900">Waitlist</h2>
-        <p className="mt-2 text-gray-600">Waitlist form goes here</p>
+        <WaitlistForm />
       </section>
     </div>
   );
