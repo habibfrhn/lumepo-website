@@ -14,9 +14,22 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://example.com";
+
 export const metadata: Metadata = {
+  metadataBase: new URL(siteUrl),
   title: "Lumepo",
   description: "Lumepo mobile app",
+  openGraph: {
+    title: "Lumepo",
+    description: "Lumepo mobile app",
+    url: siteUrl,
+    images: [
+      {
+        url: "/og-image.png",
+      },
+    ],
+  },
 };
 
 export default function RootLayout({
