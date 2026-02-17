@@ -1,7 +1,7 @@
 # AGENTS.md
 
 ## Project
-Next.js (App Router) marketing website + waitlist subscribe endpoint.
+Next.js (App Router) website + waitlist subscribe endpoint.
 
 ## Commands
 - npm install

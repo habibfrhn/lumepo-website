@@ -7,15 +7,15 @@ To keep names understandable, page files should stay thin and delegate to clearl
 
 - `src/app/`
   - `layout.tsx` for shared root layout
-  - route groups (for example, `(marketing)`) to organize route domains without changing URL paths
+  - route groups (for example, `(website)`) to organize route domains without changing URL paths
   - `page.tsx` files as route entry points only
 - `src/features/`
-  - domain-based folders (for example, `marketing-home`)
-  - `screens/` for top-level page UI components with descriptive names (for example, `MarketingHomeScreen.tsx`)
+  - domain-based folders (for example, `website-home`)
+  - `screens/` for top-level page UI components with descriptive names (for example, `HomeScreen.tsx`)
 
 ## Current homepage mapping
 
-- Route entry: `src/app/(marketing)/page.tsx`
-- Screen UI: `src/features/marketing-home/screens/MarketingHomeScreen.tsx`
+- Route entry: `src/app/(website)/page.tsx`
+- Screen UI: `src/features/website-home/screens/HomeScreen.tsx`
 
 This keeps framework-required filenames while improving readability and long-term scalability.
